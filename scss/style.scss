@@ -1,0 +1,176 @@
+// LLAMADA DE PARTIALS
+@use "impVar";
+@use "media";
+
+// REGLAS GENERALES
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: "Poppins", "sans-serif";
+}
+
+// ESTILOS NAV
+nav {
+    background-color: impVar.$color2;
+    & .collapse {
+        & .navbar-nav {
+            gap: 1em;
+            & .nav-item {
+                & a {
+                    user-select: none;
+                    color: impVar.$color1;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+// ESTILOS HEADER
+.header {
+    & .section1 {
+        & .text-container {
+            & .header-title {
+                color: impVar.$color3;
+            }
+            & .header-desc {
+                color: impVar.$color3;
+            }
+        }
+        & .btn-container {
+            & a {
+                text-decoration: none;
+                color: impVar.$color1;
+                background-color: impVar.$color3;
+                border-radius: 10px;
+            }
+        }
+    }
+    & .section2 {
+        & .img-container {
+            & img {
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+        & .text-container {
+            & .header-title {
+                color: impVar.$color3;
+            }
+            & .header-desc {
+                color: impVar.$color3;
+            }
+            & a {
+                text-decoration: none;
+                color: impVar.$color1;
+                background-color: impVar.$color3;
+                border-radius: 10px;
+            }
+        }
+    }
+    & .section3 {
+        & .header-title {
+            text-align: center;
+            user-select: none;
+            color: impVar.$color3;
+        }
+        & .carousel {
+            & .carousel-inner {
+                & .carousel-item {
+                    & .img-container {
+                        user-select: none;
+                        & img {
+                            border-radius: 25px;
+                        }
+                        & .carousel-caption {
+                            & h5 {
+                                font-size: 2em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .btn-container {
+            & a {
+                text-decoration: none;
+                user-select: none;
+                color: impVar.$color1;
+                background-color: impVar.$color3;
+                border-radius: 10px;
+            }
+        }
+    }
+    & .section3b {
+        & .header-title {
+            text-align: center;
+            user-select: none;
+            color: impVar.$color3;
+        }
+        & .card-container {
+            & .card {
+                & .card-body {
+                    user-select: none;
+                    color: impVar.$color3;
+                }
+            }
+        }
+        & .btn-container {
+            & a {
+                text-decoration: none;
+                user-select: none;
+                color: impVar.$color1;
+                background-color: impVar.$color3;
+                border-radius: 10px;
+            }
+        }
+    }
+    & .section4 {
+        gap: 1em;
+        & .header-title {
+            text-align: center;
+            user-select: none;
+            color: impVar.$color3;
+        }
+        & .card-group {
+            gap: 1em;
+            & .card {
+                & .card-body {
+                    user-select: none;
+                    color: impVar.$color3;
+                }
+            }
+        }
+        & a {
+            text-decoration: none;
+            user-select: none;
+            color: impVar.$color1;
+            background-color: impVar.$color3;
+            border-radius: 10px;
+        }
+    }
+    & .section5 {
+        & .header-title {
+            text-align: center;
+            user-select: none;
+            color: impVar.$color3;
+        }
+        & a {
+            text-decoration: none;
+            user-select: none;
+            color: impVar.$color1;
+            background-color: impVar.$color3;
+            border-radius: 10px;
+        }
+    }
+}
+// ESTILOS FOOTER
+.footer {
+    background-color: impVar.$color2;
+    & .info-container {
+        & span {
+            user-select: none;
+            color: impVar.$color1;
+        }
+    }
+}

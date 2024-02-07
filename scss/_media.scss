@@ -1,0 +1,371 @@
+// MEDIA QUERIES
+@use "impVar";
+
+@media (min-width: 320px) {
+    nav {
+        & .collapse {
+            & .navbar-nav {
+                & .nav-item {
+                    & a {
+                        font-size: 2em;
+                        padding: 0;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+    .header {
+        margin-top: 2em;
+        overflow-x: hidden;
+        & .section1 {
+            & .text-container {
+                & .header-title {
+                    user-select: none;
+                    margin-top: 0.5em;
+                    font-size: 2.5em;
+                    text-align: center;
+                }
+                & .header-desc {
+                    user-select: none;
+                    font-size: 1.25em;
+                    margin: 1.5em 0.5em;
+                    text-align: start;
+                }
+            }
+            & .btn-container {
+                gap: 1em;
+                & a {
+                    user-select: none;
+                    cursor: pointer;
+                    text-align: center;
+                    padding: 0.25em 1em;
+                    font-size: 1em;
+                    &:active {
+                        background-color: impVar.$color4;
+                    }
+                }
+            }
+        }
+        & .section2 {
+            & .text-container {
+                & .header-title {
+                    user-select: none;
+                    font-size: 2.5em;
+                    text-align: center;
+                }
+                & .header-desc {
+                    text-align: start;
+                    user-select: none;
+                    font-size: 1.25em;
+                    margin: 1.5em 0.5em;
+                }
+                & a {
+                    user-select: none;
+                    cursor: pointer;
+                    text-align: center;
+                    padding: 0.5em 5em;
+                    font-size: 1em;
+                    &:active {
+                        background-color: impVar.$color4;
+                    }
+                }
+            }
+        }
+        & .section3b {
+            & .header-title {
+                user-select: none;
+                font-size: 2.5em;
+                text-align: center;
+            }
+            & .card-container {
+                margin: 1.5em 0.5em 0 0.5em;
+                & .card {
+                    margin-top: 1em;
+                }
+            }
+            & .btn-container {
+                gap: 1em;
+                margin-top: 1em;
+                & a {
+                    user-select: none;
+                    cursor: pointer;
+                    text-align: center;
+                    padding: 0.25em 2em;
+                    font-size: 1em;
+                    &:active {
+                        background-color: impVar.$color4;
+                    }
+                }
+            }
+        }
+        & .section4 {
+            & .header-title {
+                user-select: none;
+                font-size: 2.5em;
+                text-align: center;
+            }
+            & a {
+                user-select: none;
+                cursor: pointer;
+                text-align: center;
+                padding: 0.25em 2em;
+                font-size: 1em;
+                &:active {
+                    background-color: impVar.$color4;
+                }
+            }
+        }
+        .section5 {
+            & .header-title {
+                user-select: none;
+                font-size: 2.5em;
+                text-align: center;
+            }
+            & .form-container {
+                margin: 1.62em 0;
+                & .input-group {
+                    margin-bottom: 1em;
+                    & .msg {
+                        text-align: center;
+                        height: 10em;
+                    }
+                }
+            }
+            & a {
+                user-select: none;
+                cursor: pointer;
+                text-align: center;
+                padding: 0.5em 5em;
+                font-size: 1em;
+                &:active {
+                    background-color: impVar.$color4;
+                }
+            }
+        }
+    }
+    .footer {
+        margin-top: 2em;
+        justify-content: center;
+        & .info-container {
+            margin: auto;
+            & span {
+                text-align: center;
+                font-size: 1.25em;
+            }
+        }
+        & .socials-container {
+            margin: auto;
+            & li {
+                & a {
+                    & svg {
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    nav {
+        & .collapse {
+            & .navbar-nav {
+                & .nav-item {
+                    & a {
+                        font-size: 1.25em;
+                        padding: 0.25em 2em;
+                        border: 2px solid transparent;
+                        border-radius: 10px;
+                        &:hover {
+                            border-color: impVar.$color1;
+                        }
+                        &:active {
+                            background-color: impVar.$color1;
+                            color: impVar.$color2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .header {
+        & .section1 {
+            & .text-container {
+                & .header-title {
+                    user-select: none;
+                    font-size: 3em;
+                }
+                & .header-desc {
+                    user-select: none;
+                    font-size: 1.5em;
+                    margin: 1em 2em;
+                }
+            }
+            & .btn-container {
+                gap: 3em;
+                & a {
+                    user-select: none;
+                    cursor: pointer;
+                    text-align: center;
+                    padding: 0.5em 2em;
+                    font-size: 1.5em;
+                    &:hover {
+                        cursor: pointer;
+                        background-color: impVar.$color4;
+                    }
+                    &:active {
+                        background-color: impVar.$color3;
+                    }
+                }
+            }
+        }
+        & .section2 {
+            & .img-container {
+                margin: auto;
+                gap: 5em;
+                & img {
+                    width: 100%;
+                    border-radius: 10px;
+                }
+            }
+            & .text-container {
+                & .header-title {
+                    user-select: none;
+                    font-size: 3em;
+                }
+                & .header-desc {
+                    user-select: none;
+                    font-size: 1.5em;
+                    margin: 1em 2em;
+                }
+                & a {
+                    user-select: none;
+                    cursor: pointer;
+                    text-align: center;
+                    padding: 0.5em 10em;
+                    font-size: 1.5em;
+                    &:hover {
+                        cursor: pointer;
+                        background-color: impVar.$color4;
+                    }
+                    &:active {
+                        background-color: impVar.$color3;
+                    }
+                }
+            }
+        }
+        & .section3 {
+            & .header-title {
+                user-select: none;
+                font-size: 3em;
+            }
+            & .carousel {
+                margin-top: 2em;
+                & .carousel-inner {
+                    & .carousel-item {
+                        & .img-container {
+                            & .carousel-caption {
+                                & h5 {
+                                    font-size: 2em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .btn-container {
+                gap: 3em;
+                margin-top: 2em;
+                & a {
+                    user-select: none;
+                    cursor: pointer;
+                    text-align: center;
+                    padding: 0.5em 2em;
+                    font-size: 1.5em;
+                    &:hover {
+                        cursor: pointer;
+                        background-color: impVar.$color4;
+                    }
+                    &:active {
+                        background-color: impVar.$color3;
+                    }
+                }
+            }
+        }
+        & .section4 {
+            & .card-group {
+                width: 75%;
+            }
+            & a {
+                user-select: none;
+                cursor: pointer;
+                text-align: center;
+                padding: 0.5em 2em;
+                font-size: 1.5em;
+                &:hover {
+                    cursor: pointer;
+                    background-color: impVar.$color4;
+                }
+                &:active {
+                    background-color: impVar.$color3;
+                }
+            }
+        }
+        .section5 {
+            & .header-title {
+                user-select: none;
+                font-size: 2.5em;
+                text-align: center;
+            }
+            & .form-container {
+                width: 50%;
+                margin: 15em 0 0.45em 0;
+                & .input-group {
+                    margin-bottom: 1em;
+                    & .msg {
+                        text-align: center;
+                        height: 15em;
+                    }
+                }
+            }
+            & a {
+                user-select: none;
+                cursor: pointer;
+                text-align: center;
+                padding: 0.5em 10em;
+                font-size: 1.5em;
+                &:hover {
+                    cursor: pointer;
+                    background-color: impVar.$color4;
+                }
+                &:active {
+                    background-color: impVar.$color3;
+                }
+            }
+        }
+    }
+    .footer {
+        margin-top: 2em;
+        justify-content: space-between;
+        & .info-container {
+            margin-left: 2em;
+            & span {
+                text-align: center;
+                font-size: 1.25em;
+            }
+        }
+        & .socials-container {
+            margin-right: 2em;
+            & li {
+                & a {
+                    & svg {
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
